@@ -99,7 +99,7 @@ class TransformPathCommand extends Command
      */
     protected function generateMediaIdentifier(Media $media): string
     {
-        return "#$media->id ({$media->model->name} #{$media->getKey()} $media->disk/$media->conversions_disk)";
+        return "#$media->id ({$media->model_type} #{$media->model_id} $media->disk/$media->conversions_disk)";
     }
 
     /**
